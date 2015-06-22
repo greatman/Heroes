@@ -2,7 +2,7 @@ package com.herocraftonline.heroes.api.classes;
 
 import com.herocraftonline.heroes.api.characters.CharacterBase;
 import com.herocraftonline.heroes.api.components.Component;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 import java.util.Collection;
 import java.util.Set;

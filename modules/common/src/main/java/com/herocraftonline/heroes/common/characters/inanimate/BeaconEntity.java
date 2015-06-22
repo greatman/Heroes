@@ -1,7 +1,7 @@
 package com.herocraftonline.heroes.common.characters.inanimate;
 
+import org.spongepowered.api.data.DataView;
 import org.spongepowered.api.entity.Entity;
-import org.spongepowered.api.service.persistence.data.DataView;
 import org.spongepowered.api.world.Location;
 
 import java.util.UUID;

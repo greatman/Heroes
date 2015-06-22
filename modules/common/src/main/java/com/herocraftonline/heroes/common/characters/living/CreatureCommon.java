@@ -2,9 +2,9 @@ package com.herocraftonline.heroes.common.characters.living;
 
 import com.herocraftonline.heroes.api.characters.Creature;
 import com.herocraftonline.heroes.common.characters.CharacterCommon;
+import org.spongepowered.api.data.DataView;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.living.Living;
-import org.spongepowered.api.service.persistence.data.DataView;
 import org.spongepowered.api.world.Location;
 
 import java.util.UUID;

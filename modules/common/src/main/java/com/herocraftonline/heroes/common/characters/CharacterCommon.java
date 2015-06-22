@@ -12,7 +12,7 @@ import com.herocraftonline.heroes.api.components.core.ManaTracker;
 import com.herocraftonline.heroes.api.components.core.SkillTracker;
 import com.herocraftonline.heroes.api.effects.EffectBase;
 import com.herocraftonline.heroes.api.util.Combiner;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -8,8 +8,10 @@ import com.herocraftonline.heroes.api.plugin.HeroesPlugin;
 import com.herocraftonline.heroes.skills.SkillManagerImpl;
 import com.herocraftonline.heroes.util.Commons;
 import org.spongepowered.api.entity.player.Player;
+import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.format.TextColors;
 import org.spongepowered.api.util.command.CommandException;
+import org.spongepowered.api.util.command.CommandResult;
 import org.spongepowered.api.util.command.CommandSource;
 
 import java.util.Arrays;
@@ -35,6 +37,11 @@ public class CommandHandlerImpl implements CommandHandler {
         }
         this.skillManager = (SkillManagerImpl) plugin.getSkillManager();
         this.commandsByIdentifier = new HashMap<>();
+    }
+
+    @Override
+    public Optional<CommandResult> process(CommandSource source, String arguments) throws CommandException {
+        return null;
     }
 
     @Override
@@ -99,6 +106,21 @@ public class CommandHandlerImpl implements CommandHandler {
     @Override
     public boolean testPermission(CommandSource commandSource) {
         return true;
+    }
+
+    @Override
+    public Optional<? extends Text> getShortDescription(CommandSource source) {
+        return null;
+    }
+
+    @Override
+    public Optional<? extends Text> getHelp(CommandSource source) {
+        return null;
+    }
+
+    @Override
+    public Text getUsage(CommandSource source) {
+        return null;
     }
 
     @Override

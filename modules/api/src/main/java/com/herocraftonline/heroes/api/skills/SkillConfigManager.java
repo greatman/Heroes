@@ -2,7 +2,7 @@ package com.herocraftonline.heroes.api.skills;
 
 import com.herocraftonline.heroes.api.characters.CharacterBase;
 import com.herocraftonline.heroes.api.util.Combiner;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 /**
  * Responsible for loading and retrieving data and settings from configuration and characters

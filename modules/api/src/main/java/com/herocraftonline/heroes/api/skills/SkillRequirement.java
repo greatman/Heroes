@@ -2,7 +2,7 @@ package com.herocraftonline.heroes.api.skills;
 
 import com.herocraftonline.heroes.api.characters.CharacterBase;
 import com.herocraftonline.heroes.api.util.Combiner;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 /**
  * Represents a condition that must be met before a skill can be executed by a specific character. Implementations

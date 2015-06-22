@@ -6,10 +6,10 @@ import com.herocraftonline.heroes.api.components.Component;
 import com.herocraftonline.heroes.api.components.core.HealthTracker;
 import com.herocraftonline.heroes.api.plugin.HeroesPlugin;
 import com.herocraftonline.heroes.api.util.Combiner;
+import org.spongepowered.api.data.DataQuery;
+import org.spongepowered.api.data.DataView;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.living.Living;
-import org.spongepowered.api.service.persistence.data.DataQuery;
-import org.spongepowered.api.service.persistence.data.DataView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -87,12 +87,12 @@ public class ComponentHealth implements Component, HealthTracker {
             throw new IllegalArgumentException("Health component cannot have a calculated maximum health <= 0");
         }
         living = (Living)e;
-        double defaultHealth = living.getMaxHealth();
+        double defaultHealth = living.getHealthData().getMaxHealth();
         // TODO check defaultHealth against vanilla values to prevent overwrites -- compatibility with other plugins
         // Make sure we are always overriding players
-        double ratio = living.getHealth()/living.getMaxHealth();
-        living.setMaxHealth(health);
-        living.setHealth(living.getMaxHealth() * ratio);
+        double ratio = living.getHealthData().getHealth()/living.getHealthData().getMaxHealth();
+        living.getHealthData().setMaxHealth(health);
+        living.getHealthData().setHealth(living.getHealthData().getMaxHealth() * ratio);
     }
 
     @Override
@@ -119,26 +119,26 @@ public class ComponentHealth implements Component, HealthTracker {
 
     @Override
     public double getMaxHealth() {
-        return living.getMaxHealth();
+        return living.getHealthData().getMaxHealth();
     }
 
     @Override
     public double getHealth() {
-        return living.getHealth();
+        return living.getHealthData().getHealth();
     }
 
     @Override
     public void setHealth(double amount) {
-        if (amount > living.getMaxHealth()) {
+        if (amount > living.getHealthData().getMaxHealth()) {
             throw new IllegalArgumentException("Health must be less than the set maximum health value of " + living
-                    .getMaxHealth());
+                    .getHealthData().getMaxHealth());
         }
-        living.setHealth(amount);
+        living.getHealthData().setHealth(amount);
     }
 
     @Override
     public void setMaxHealth(double amount) {
-        living.setMaxHealth(amount);
+        living.getHealthData().setMaxHealth(amount);
     }
 
     private static class BoostData {

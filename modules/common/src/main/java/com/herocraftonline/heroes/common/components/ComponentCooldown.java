@@ -5,8 +5,8 @@ import com.herocraftonline.heroes.api.components.Component;
 import com.herocraftonline.heroes.api.components.core.CooldownTracker;
 import com.herocraftonline.heroes.api.plugin.HeroesPlugin;
 import com.herocraftonline.heroes.api.util.Combiner;
-import org.spongepowered.api.service.persistence.data.DataQuery;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataQuery;
+import org.spongepowered.api.data.DataView;
 
 import java.util.HashMap;
 

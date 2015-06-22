@@ -3,7 +3,7 @@ package com.herocraftonline.heroes.api.classes;
 import com.herocraftonline.heroes.api.characters.CharacterBase;
 import com.herocraftonline.heroes.api.plugin.HeroesPlugin;
 import org.spongepowered.api.GameState;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 /**
  * <p>Implementations are identified by name and represent a condition check that must be met by a character prior to

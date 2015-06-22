@@ -4,7 +4,7 @@ import com.herocraftonline.heroes.api.characters.CharacterBase;
 import com.herocraftonline.heroes.api.plugin.HeroesPlugin;
 import com.herocraftonline.heroes.api.util.Combiner;
 import org.spongepowered.api.GameState;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 /**
  * <p>Components represent persistent metadata that can be attached to a Characters, generally through the usage of

@@ -1,6 +1,7 @@
 package com.herocraftonline.heroes.api.io.configuration;
 
-import org.spongepowered.api.service.persistence.data.DataView;
+
+import org.spongepowered.api.data.DataView;
 
 /**
  * Responsible for saving/ retrieving configuration settings from storage (general configuration, class configs,

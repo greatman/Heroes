@@ -17,11 +17,11 @@ import com.herocraftonline.heroes.effects.EffectManagerImpl;
 import com.herocraftonline.heroes.skills.SkillManagerImpl;
 import com.herocraftonline.heroes.util.LoaderUtil;
 import org.spongepowered.api.Game;
+import org.spongepowered.api.event.Subscribe;
 import org.spongepowered.api.event.state.InitializationEvent;
 import org.spongepowered.api.event.state.PostInitializationEvent;
 import org.spongepowered.api.event.state.PreInitializationEvent;
 import org.spongepowered.api.plugin.Plugin;
-import org.spongepowered.api.util.event.Subscribe;
 
 import java.util.logging.Logger;
 

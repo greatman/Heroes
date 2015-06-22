@@ -1,14 +1,14 @@
 package com.herocraftonline.heroes.api.components.core;
 
 import com.herocraftonline.heroes.api.skills.SkillRequirement;
-import org.spongepowered.api.service.persistence.data.DataView;
+import org.spongepowered.api.data.DataView;
 
 import java.util.Collection;
 
 /**
  * Handles tracking what skills are available to the attached character. Information tracked by this component includes
  * what skills are available to a given character and what requirements are needed to execute said skill. It is
- * important to note that {@link #addSkill(String, org.spongepowered.api.service.persistence.data.DataView)} and
+ * important to note that {@link #addSkill(String, org.spongepowered.api.data.DataView)} and
  * {@link #removeSkill(String)} operate independently from character class configuration
  * and directly on the character to which the tracker is attached - that is to say while the other methods in this
  */
